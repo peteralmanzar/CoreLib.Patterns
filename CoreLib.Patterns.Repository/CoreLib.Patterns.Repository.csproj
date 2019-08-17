@@ -6,14 +6,24 @@
     <Authors>peter.almanzar</Authors>
     <Description>Provides simple base abstraction to implement repository best practices and design patterns</Description>
     <PackageTags>abstract generic repository design pattern</PackageTags>
-    <RepositoryUrl>MIT</RepositoryUrl>
+    <RepositoryUrl>https://github.com/peteralmanzar/CoreLib.Patterns/tree/master/CoreLib.Patterns.Repository</RepositoryUrl>
     <RepositoryType>github</RepositoryType>
     <Company>peter.almanzar</Company>
     <Copyright>2019</Copyright>
     <PackageLicenseExpression></PackageLicenseExpression>
     <NeutralLanguage></NeutralLanguage>
-    <PackageReleaseNotes>updated author to github contributer name</PackageReleaseNotes>
-    <Version>1.0.1</Version>
+    <PackageReleaseNotes>updated license from expression to file
+added project url as github repository url</PackageReleaseNotes>
+    <Version>1.0.2</Version>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/peteralmanzar/CoreLib.Patterns/tree/master/CoreLib.Patterns.Repository</PackageProjectUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
