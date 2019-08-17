@@ -2,6 +2,18 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>peter.almanzar</Authors>
+    <Description>Provides simple base abstraction to implement repository best practices and design patterns</Description>
+    <PackageTags>abstract generic repository design pattern</PackageTags>
+    <RepositoryUrl>MIT</RepositoryUrl>
+    <RepositoryType>github</RepositoryType>
+    <Company>peter.almanzar</Company>
+    <Copyright>2019</Copyright>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <NeutralLanguage></NeutralLanguage>
+    <PackageReleaseNotes>updated author to github contributer name</PackageReleaseNotes>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 </Project>
