@@ -3,18 +3,17 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Authors>peter.almanzar</Authors>
+    <Authors>peteralmanzar</Authors>
     <Description>Provides simple base abstraction to implement repository best practices and design patterns</Description>
     <PackageTags>abstract generic repository design pattern</PackageTags>
     <RepositoryUrl>https://github.com/peteralmanzar/CoreLib.Patterns/tree/master/CoreLib.Patterns.Repository</RepositoryUrl>
     <RepositoryType>github</RepositoryType>
-    <Company>peter.almanzar</Company>
+    <Company>peteralmanzar</Company>
     <Copyright>2019</Copyright>
     <PackageLicenseExpression></PackageLicenseExpression>
     <NeutralLanguage></NeutralLanguage>
-    <PackageReleaseNotes>updated license from expression to file
-added project url as github repository url</PackageReleaseNotes>
-    <Version>1.0.2</Version>
+    <PackageReleaseNotes>updated author name typo</PackageReleaseNotes>
+    <Version>1.0.3</Version>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/peteralmanzar/CoreLib.Patterns/tree/master/CoreLib.Patterns.Repository</PackageProjectUrl>
   </PropertyGroup>
