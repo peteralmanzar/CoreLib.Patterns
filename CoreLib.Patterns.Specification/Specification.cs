@@ -5,12 +5,37 @@ namespace CoreLib.Patterns.Specification
 {
     public abstract class Specification<T>
     {
+        public static readonly Specification<T> All = new IdentitySpecification<T>();
+
         #region Public Functions
         public abstract Expression<Func<T, bool>> ToExpression(); 
         public bool IsSatisfiedBy(T entity)
         {
             var predicate = ToExpression().Compile();
             return predicate(entity);
+        }
+
+        public Specification<T> And(Specification<T> specification)
+        {
+            if (this == All)
+                return specification;
+            if (specification == All)
+                return this;
+
+            return new AndSpecification<T>(this, specification);
+        }
+
+        public Specification<T> Or(Specification<T> specification)
+        {
+            if (this == All || specification == All)
+                return All;
+
+            return new OrSpecification<T>(this, specification);
+        }
+
+        public Specification<T> Not()
+        {
+            return new NotSpecification<T>(this);
         }
         #endregion
     }
@@ -90,6 +115,16 @@ namespace CoreLib.Patterns.Specification
             UnaryExpression notExpression = Expression.Not(specificationExpression.Body);
             return Expression.Lambda<Func<T, bool>>(notExpression, specificationExpression.Parameters);
         }
+        #endregion
+    }
+
+    internal sealed class IdentitySpecification<T> : Specification<T>
+    {
+        #region Public Functions
+        public override Expression<Func<T, bool>> ToExpression()
+        {
+            return result => true;
+        } 
         #endregion
     }
 }
