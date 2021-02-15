@@ -2,6 +2,24 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>peteralmanzar</Authors>
+    <Company>peteralmanzar</Company>
+    <Product>CoreLib.Patterns.Specification</Product>
+    <Copyright>2021</Copyright>
+    <Description>Provides simple base abstraction to implement specification pattern</Description>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageTags>abstract generic specification design pattern</PackageTags>
+    <PackageProjectUrl>https://github.com/peteralmanzar/CoreLib.Patterns/tree/master/CoreLib.Patterns.Specification</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/peteralmanzar/CoreLib.Patterns/tree/master/CoreLib.Patterns.Specification</RepositoryUrl>
+    <RepositoryType>github</RepositoryType>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
